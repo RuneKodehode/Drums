@@ -1,0 +1,29 @@
+body {
+  background-color: rgba(92, 147, 210, 0);
+}
+kbd {
+  font-size: 2rem;
+}
+.drums {
+  display: flex;
+  width: 90vw;
+  align-content: end;
+  justify-content: center;
+  gap: 5px;
+}
+
+.drum {
+  border: 2px solid orangered;
+  transition: all 0.08s ease-in-out;
+  border-radius: 100%;
+  width: 8%;
+  text-align: center;
+  color: white;
+  background: rgb(0, 0, 0);
+}
+
+.animation {
+  transform: scale(1.2);
+
+  box-shadow: 0 0 50px #ffffff;
+}
