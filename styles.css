@@ -1,10 +1,12 @@
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  width: 100vw;
 }
 kbd {
   font-size: 2rem;
 }
 .drums {
+  margin-top: 20%;
   display: flex;
   width: 90vw;
   align-content: end;
