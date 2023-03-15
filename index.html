@@ -1,41 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="icon" href="drum.png">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-        <div class="drums">
-          <div data-key="65" class="drum animation">
-            <kbd>A</kbd>
-          </div>
-          <div data-key="83" class="drum animation">
-            <kbd>S</kbd>
-          </div>
-          <div data-key="68" class="drum animation">
-            <kbd>D</kbd>
-          </div>
-          <div data-key="70" class="drum animation">
-            <kbd>F</kbd>
-          </div>
-          <div data-key="71" class="drum animation">
-            <kbd>G</kbd>
-          </div>
-          <div data-key="72" class="drum animation">
-            <kbd>H</kbd>
-          </div>
-          <div data-key="74" class="drum animation">
-            <kbd>J</kbd>
-          </div>
-          <div data-key="75" class="drum animation">
-            <kbd>K</kbd>
-          </div>
-        </div>
-      </div>
+    <link rel="icon" href="drum.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="piano">
+      <kbd accesskey="A" data-sound="C4.mp3">A</kbd>
+      <kbd class="black" accesskey="W" data-sound="Db4.mp3">W</kbd>
+      <kbd accesskey="S" data-sound="D4.mp3">S</kbd>
+      <kbd class="black" accesskey="E" data-sound="Eb4.mp3">E</kbd>
+      <kbd accesskey="D" data-sound="E4.mp3">D</kbd>
+      <kbd accesskey="F" data-sound="F4.mp3">F</kbd>
+      <kbd class="black" accesskey="R" data-sound="Gb4.mp3">R</kbd>
+      <kbd class="black" accesskey="T" data-sound="Ab4.mp3">T</kbd>
+      <kbd accesskey="G" data-sound="G4.mp3">G</kbd>
+      <kbd accesskey="H" data-sound="A4.mp3">H</kbd>
+      <kbd class="black" accesskey="U" data-sound="Bb4.mp3">U</kbd>
+      <kbd accesskey="J" data-sound="B4.mp3">J</kbd>
+      <kbd accesskey="K" data-sound="C5.mp3">K</kbd>
+      <kbd class="black" accesskey="I" data-sound="Db5.mp3">I</kbd>
+      <kbd accesskey="L" data-sound="D5.mp3">L</kbd>
+      <kbd class="black" accesskey="O" data-sound="Eb5.mp3">O</kbd>
+    </div>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
