@@ -24,9 +24,9 @@ body {
   height: 14vh;
   transform: translateY();
   box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.2) inset,
-    0 -2px 2px 2px rgba(0, 0, 0, 0.6) inset, 0 2px 2px rgba(0, 0, 0, 0.766);
+    0 -2px 2px 2px rgba(0, 0, 0, 0.6) inset, 0 5px 2px rgba(1, 1, 1, 0.766);
   z-index: 2;
-  background: linear-gradient(45deg, #090909 0%, #302f2f 100%);
+
   border-radius: 3px;
 }
 .white {
@@ -54,14 +54,11 @@ kbd {
 }
 
 @keyframes whitekey {
-  40% {
-    box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.2) inset,
-      0 -3px 2px 3px rgba(0, 0, 0, 0.6) inset, 0 2px 2px rgba(0, 0, 0, 0.766);
-  }
   100% {
     transform: translateY(3px);
     box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.2) inset,
-      0 -3px 2px 3px rgba(0, 0, 0, 0.6) inset, 0 2px 2px rgba(0, 0, 0, 0.766);
+      0 -3px 2px -3px rgba(173, 157, 157, 0.6) inset,
+      0 2px 2px rgba(209, 199, 199, 0.766);
   }
 }
 
