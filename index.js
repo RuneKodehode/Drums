@@ -1,7 +1,13 @@
-const audioContext = new AudioContext();
-
 document.addEventListener("keydown", (event) => {
-  const key = event.key.toUpperCase();
+  playSound(event.key.toUpperCase());
+});
+
+document.addEventListener("touchstart", (event) => {
+  const key = event.target.getAttribute("accesskey");
+  playSound(key);
+});
+
+function playSound(key) {
   const kbd = document.querySelector(`kbd[accesskey="${key}"]`);
   if (kbd) {
     const soundFile = kbd.dataset.sound;
@@ -9,9 +15,8 @@ document.addEventListener("keydown", (event) => {
     audioElement.play();
     kbd.classList.add("animate");
 
-    // Remove the "animate" class after the animation is complete
     setTimeout(() => {
       kbd.classList.remove("animate");
     }, 90);
   }
-});
+}
