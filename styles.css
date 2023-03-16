@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(252deg, #86400e, #cb3f08);
+  background: transparent;
   height: 100dvh;
   overflow: hidden;
 }
@@ -12,13 +12,15 @@ body {
 }
 .piano {
   display: flex;
+  width: 90vw;
+  justify-content: center;
 }
 .black {
   align-self: flex-start;
   background-color: black;
   color: white;
-  width: 1em;
-  height: 3em;
+  width: 2.7vw;
+  height: 14vh;
   transform: translateY();
   box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.2) inset,
     0 -2px 2px 2px rgba(0, 0, 0, 0.6) inset, 0 2px 2px rgba(0, 0, 0, 0.766);
@@ -27,8 +29,8 @@ body {
   border-radius: 3px;
 }
 .white {
-  width: 1.5em;
-  height: 5rem;
+  width: 3vw;
+  height: 17vh;
   z-index: 1;
   background: linear-gradient(45deg, #f6f2f2 0%, #ffffff 100%);
   border-radius: 3px;
@@ -47,15 +49,17 @@ kbd {
 }
 
 .animate {
-  animation: key 0.2s ease-out;
+  animation: whitekey 0.2s ease-out;
 }
 
-@keyframes key {
+@keyframes whitekey {
   40% {
-    box-shadow: 0px 0px orangered;
+    box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.2) inset,
+      0 -3px 2px 3px rgba(0, 0, 0, 0.6) inset, 0 2px 2px rgba(0, 0, 0, 0.766);
   }
   100% {
     transform: translateY(3px);
-    box-shadow: 0px 0px orangered;
+    box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.2) inset,
+      0 -3px 2px 3px rgba(0, 0, 0, 0.6) inset, 0 2px 2px rgba(0, 0, 0, 0.766);
   }
 }
